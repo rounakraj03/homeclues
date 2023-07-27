@@ -1,0 +1,326 @@
+body {
+	background-color:gray;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* fonts */
+.decorDiv{
+text-align: center;
+padding-bottom: 17px;
+color: white;
+display:none;
+
+}
+.footerDiv{
+background: url(../../../uploads/2018/07/Untitled-3.html) no-repeat center center fixed;
+
+}
+.jumbledWords{
+display:table;
+margin:auto;
+}
+div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: normal;
+}
+
+div.jqcloud a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+div.jqcloud span.w10 { font-size: 550%; }
+div.jqcloud span.w9 { font-size: 500%; }
+div.jqcloud span.w8 { font-size: 450%; }
+div.jqcloud span.w7 { font-size: 400%; }
+div.jqcloud span.w6 { font-size: 350%; }
+div.jqcloud span.w5 { font-size: 300%; }
+div.jqcloud span.w4 { font-size: 250%; }
+div.jqcloud span.w3 { font-size: 200%; }
+div.jqcloud span.w2 { font-size: 150%; }
+div.jqcloud span.w1 { font-size: 100%; }
+
+ /* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+div.jqcloud span.w10 { font-size: 100%; }
+div.jqcloud span.w9 { font-size: 100%; }
+div.jqcloud span.w8 { font-size: 50%; }
+div.jqcloud span.w7 { font-size: 100%; }
+div.jqcloud span.w6 { font-size: 150%; }
+div.jqcloud span.w5 { font-size: 100%; }
+div.jqcloud span.w4 { font-size: 150%; }
+div.jqcloud span.w3 { font-size: 100%; }
+div.jqcloud span.w2 { font-size: 150%; }
+div.jqcloud span.w1 { font-size: 100%; }
+
+}
+/* colors */
+
+div.jqcloud { color: #09f; }
+div.jqcloud a { color: inherit; }
+div.jqcloud a:hover { color: #0df; }
+div.jqcloud a:hover { color: #0cf; }
+div.jqcloud span.w10 { color: white; }
+div.jqcloud span.w9 { color: white; }
+div.jqcloud span.w8 { color: white; }
+div.jqcloud span.w7 { color: white; }
+div.jqcloud span.w6 { color: white; }
+div.jqcloud span.w5 { color: white; }
+div.jqcloud span.w4 { color: white; }
+div.jqcloud span.w3 { color: white; }
+div.jqcloud span.w2 { color: white; }
+div.jqcloud span.w1 { color: white; }
+
+/* layout */
+
+div.jqcloud {
+  overflow: hidden;
+  position: relative;
+}
+
+div.jqcloud span { padding: 0; }
+.
+[class*='col-']{
+    background: none;
+}
+.jumbotron{
+    text-align: center;
+    background:none;
+    color: beige;
+}
+.caroWrapper{
+    display: block;
+    margin: auto;
+}   
+.journeyDiv{
+    color: white;
+    height: 387px;
+    	background: url(../../../uploads/2018/03/GHr12sH.jpg) no-repeat center center fixed;
+}
+.eachpart{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.html); /* remove if you don't care about IE8 */
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    
+    font: 32px Arial, sans-serif;
+}
+.top-right {
+    background-color: white;
+    padding: 12px;
+    position: absolute;
+    bottom: 60px;
+    right: 83px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.jumbotron{
+    
+color: white;    
+}
+select.form-control:not([size]):not([multiple]) {
+    height: 46px !important;
+}
+.caroWrapper{
+    width: 100%;
+}
+.sbt_btn{
+    background-color: #d85798;
+    margin: auto;display: block;
+    border: none;
+}
+.sbt_btn:hover{
+    background-color: hotpink;
+}
+.form-group {
+    margin-bottom: 6px;
+}
+.form-control{
+        padding: 7px;
+}
+.consultationDiv{
+    display: block;
+    margin: auto;
+    padding: 22px;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contentText{
+    text-align: center;
+    bottom: 30px;
+}
+.detaiilsHoneycomb{
+    bottom: 94px;
+}
+.emptyRow{
+    background-color: white;
+    height: 40px;   
+}
+.display-4{
+    line-height: 0.2;
+    font-size: 3.0rem;
+}
+.something_every{
+    padding-bottom: 0px;
+}
+.lastrow{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.lastDiv{
+    height: 415px;
+    display: block;margin: auto;
+}
+.failed_submit{
+    display: none;width: 100%;color: red;text-align: center;font-size: 10px;font-weight: bolder;color: red;
+}
+.imgClassDiv{
+    max-width: 86%
+}
+hr{
+    background-color: white;
+    
+}
+.finalRow{
+    text-align: center;
+    color: white;
+}
+.activities{
+text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.activities_mobile{
+    display: none;
+}
+.my_favorite_latin_words{
+        width: 100%; height: 350px;
+    }
+ /* For mobile phones: */
+@media only screen and (max-width: 768px) {
+ .decorDiv{
+display:block;
+}  
+.top-right {
+    background: url(../../../uploads/2018/03/GHr12sH.jpg) no-repeat center center fixed;
+    padding: 10px;
+    bottom: 0px;
+    position: initial;
+    right: 0px;
+    z-index: 1;
+    padding: 10px;
+}
+.form-check-label{
+    color: white;
+}
+.display-4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.imgClassDiv {
+    max-width: 63%;
+}
+[class*='col-'] {
+    background: none;
+}
+.journeyDiv {
+    font-size: 13px;
+    height: 1071px;
+}
+    .height_rem{
+        height: 25rem;
+    }
+.contentText{
+        bottom: 4px;
+    }
+.emptyRow{
+    background-color: white;
+    height: 0px;
+    bottom: 0px;
+}  
+.activities{
+        display: none;
+    }
+    .activities_mobile{
+        display: block;
+        /*text-align: center;
+        color: white;*/
+    }
+    .mobile_unit{
+            margin:0 auto;
+    text-align:left;
+    }
+    ul.a {list-style-type: circle;}
+    .center{
+    width:200px;
+      margin:0 auto;
+      text-align:left;
+        color: white;
+        padding: 15px;
+}
+ul{
+    list-style-type: square;
+}
+    .eachpart{
+        margin-bottom: -27px;
+    }
+.emptystyle{
+        margin-bottom: -55px;
+    }
+.centered_line{
+            top: 38% !important;
+            left: 50% !important;
+            font-size: 12px !important;
+            width: 100%;
+            text-align: center;
+        }
+    h2{
+        font-weight: 100;
+        font-size: 20px;
+    }
+    
+}
+.btn-secondary {
+    color: #170202;
+    background-color: #ffffff;
+    border-color: #6c757d;
+}
+.centered_line {
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 2px 2px 4px #000000;
+}
+ /* For mobile phones: */
+
+
+
