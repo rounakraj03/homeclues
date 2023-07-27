@@ -22,7 +22,46 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hcinterior.in/","url":"https://hcinterior.in/","name":"Home - Home Clues","isPartOf":{"@id":"https://hcinterior.in/#website"},"about":{"@id":"https://hcinterior.in/#organization"},"primaryImageOfPage":{"@id":"https://hcinterior.in/#primaryimage"},"image":{"@id":"https://hcinterior.in/#primaryimage"},"thumbnailUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","datePublished":"2022-03-31T06:00:17+00:00","dateModified":"2023-06-27T11:44:56+00:00","breadcrumb":{"@id":"https://hcinterior.in/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://hcinterior.in/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#primaryimage","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"HC-logo-3-cropped"},{"@type":"BreadcrumbList","@id":"https://hcinterior.in/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://hcinterior.in/#website","url":"https://hcinterior.in/","name":"Home Clues","description":"Home Clues","publisher":{"@id":"https://hcinterior.in/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hcinterior.in/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://hcinterior.in/#organization","name":"Home Clues","url":"https://hcinterior.in/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#/schema/logo/image/","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"Home Clues"},"image":{"@id":"https://hcinterior.in/#/schema/logo/image/"}}]}</script>
 
+<style>
+.img-slider-class{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
+.container-slider {
+    height: 70vmin;
+    /* width: 95vmin; */
+    width: 70%;
+    /* height: 80%; */
+    position: relative;
+    overflow: hidden;
+}
+
+#my-img-slider{
+    clip-path: polygon(0 0 , 50% 0, 50% 100%, 0 100%);
+}
+#slider{
+    position: relative;
+    -webkit-appearance: none;
+    width: calc( 100% + 40px);
+    height: 100%;
+    margin-left: -20px;
+    background-color: transparent;
+    outline: none;
+}
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background: url("slider-icon.svg"),
+    rgba(255,255,255,0.3);
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+}
+</style>
 
 <link rel='dns-prefetch' href='http://cdnjs.cloudflare.com/' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
@@ -284,6 +323,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <article id="post-2" class="post-2 page type-page status-publish hentry">
 	<header class="entry-header">
 		<h1 class="entry-title">Home</h1>	</header><!-- .entry-header -->
+
+		<div class="container-slider">
+			<img class="img-slider-class" src="Images/image-1.png">
+			<img class="img-slider-class" id="my-img-slider" src="Images/image-2.png">
+			<input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+		</div>
+
 
 	<div class="entry-content">
 				<div data-elementor-type="wp-page" data-elementor-id="2" class="elementor elementor-2">
@@ -1984,4 +2030,14 @@ form.append('<input type="hidden" name="vx_url" value="'+window.location.href+'"
 });
 </script> 
 
+
+<script>
+	function slide(){
+    let slideValue = document.getElementById("slider").value;
+    document.getElementById("my-img-slider").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+}
+</script>
+
 </body>
+
