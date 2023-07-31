@@ -9,6 +9,56 @@
 <link rel="icon" type="image/x-icon" href="wp-content/uploads/2023/06/Favicon-02.jpg">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
+<style>
+	.img-slider-class{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+/* 	
+	.container-slider {
+		height: 70vmin;
+		width: 70%;
+		position: relative;
+		overflow: hidden;
+	} */
+
+	.container-slider {
+  height: 70vmin;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+	
+	#my-img-slider{
+		clip-path: polygon(0 0 , 50% 0, 50% 100%, 0 100%);
+	}
+	#slider{
+		position: relative;
+		-webkit-appearance: none;
+		width: calc( 100% + 40px);
+		height: 100%;
+		margin-left: -20px;
+		background-color: transparent;
+		outline: none;
+	}
+	#slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		height: 40px;
+		width: 40px;
+		background: url("slider-icon.svg"),
+		rgba(255,255,255,0.3);
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+		background-size: contain;
+		cursor: pointer;
+	}
+	</style>
+
 	<title>Home - HOMECLUES</title>
 	<link rel="canonical" href="index.html" />
 	<meta property="og:locale" content="en_US" />
@@ -20,7 +70,7 @@
 	<meta property="article:modified_time" content="2023-06-27T11:44:56+00:00" />
 	<meta property="og:image" content="wp-content/uploads/2023/06/HC-logo-3-cropped.png" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hcinterior.in/","url":"https://hcinterior.in/","name":"Home - Home Clues","isPartOf":{"@id":"https://hcinterior.in/#website"},"about":{"@id":"https://hcinterior.in/#organization"},"primaryImageOfPage":{"@id":"https://hcinterior.in/#primaryimage"},"image":{"@id":"https://hcinterior.in/#primaryimage"},"thumbnailUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","datePublished":"2022-03-31T06:00:17+00:00","dateModified":"2023-06-27T11:44:56+00:00","breadcrumb":{"@id":"https://hcinterior.in/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://hcinterior.in/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#primaryimage","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"HC-logo-3-cropped"},{"@type":"BreadcrumbList","@id":"https://hcinterior.in/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://hcinterior.in/#website","url":"https://hcinterior.in/","name":"Home Clues","description":"Home Clues","publisher":{"@id":"https://hcinterior.in/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hcinterior.in/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://hcinterior.in/#organization","name":"Home Clues","url":"https://hcinterior.in/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#/schema/logo/image/","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"Home Clues"},"image":{"@id":"https://hcinterior.in/#/schema/logo/image/"}}]}</script>
+	<!-- <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hcinterior.in/","url":"https://hcinterior.in/","name":"Home - Home Clues","isPartOf":{"@id":"https://hcinterior.in/#website"},"about":{"@id":"https://hcinterior.in/#organization"},"primaryImageOfPage":{"@id":"https://hcinterior.in/#primaryimage"},"image":{"@id":"https://hcinterior.in/#primaryimage"},"thumbnailUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","datePublished":"2022-03-31T06:00:17+00:00","dateModified":"2023-06-27T11:44:56+00:00","breadcrumb":{"@id":"https://hcinterior.in/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://hcinterior.in/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#primaryimage","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"HC-logo-3-cropped"},{"@type":"BreadcrumbList","@id":"https://hcinterior.in/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://hcinterior.in/#website","url":"https://hcinterior.in/","name":"Home Clues","description":"Home Clues","publisher":{"@id":"https://hcinterior.in/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hcinterior.in/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://hcinterior.in/#organization","name":"Home Clues","url":"https://hcinterior.in/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hcinterior.in/#/schema/logo/image/","url":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","contentUrl":"https://hcinterior.in/wp-content/uploads/2023/06/HC-logo-3-cropped.png","width":248,"height":248,"caption":"Home Clues"},"image":{"@id":"https://hcinterior.in/#/schema/logo/image/"}}]}</script> -->
 
 
 
@@ -237,9 +287,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div id="block-34" class="header-row widget_block"><p>Customer Care <span>1800 1200 532</span></p></div><div id="block-35" class="header-row widget_block">
 <div class="wp-block-buttons is-layout-flex">
 <!-- <div class="wp-block-button cm-popup-button"> -->
-	<div class="wp-block-button">
+<div class="wp-block-button">
 	<!-- <a class="wp-block-button__link wp-element-button" href="assets/contact-page.html" data-target="#">Let's Connect</a> -->
-	<a class="wp-block-button__link wp-element-button" href="assets/contact-page.html">Let's Connect</a>
+	<a class="wp-block-button__link wp-element-button " href="assets/contact-page.html">Let's Connect</a>
 </div>
 
 
@@ -256,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2789' id='mega-menu-item-2789'><a class="mega-menu-link" href="javascript:void(0)">Bedroom Designs</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2910' id='mega-menu-item-2910'><a class="mega-menu-link" href="javascript:void(0)">Living Room</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2909' id='mega-menu-item-2909'><a class="mega-menu-link" href="javascript:void(0)">Kid’s Room</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2911' id='mega-menu-item-2911'><a class="mega-menu-link" href="javascript:void(0)">Modular Kitchen</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2912' id='mega-menu-item-2912'><a class="mega-menu-link" href="javascript:void(0)">Modular Wardrobe</a></li></ul>
 </li><li class='mega-cm-menu-head mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-2471 cm-menu-head' id='mega-menu-item-2471'><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">High Creation<span class="mega-indicator"></span></a>
 <ul class="mega-sub-menu">
-<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1085' id='mega-menu-item-1085'><a class="mega-menu-link" href="javascript:void(0)">About Us</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2191' id='mega-menu-item-2191'><a class="mega-menu-link" href="javascript:void(0)">How It Works</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2195' id='mega-menu-item-2195'><a class="mega-menu-link" href="javascript:void(0)">Team</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1082' id='mega-menu-item-1082'><a class="mega-menu-link" href="contact-us/index.html">Contact Us</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1079' id='mega-menu-item-1079'><a class="mega-menu-link" href="javascript:void(0)">Blog</a></li></ul>
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1085' id='mega-menu-item-1085'><a class="mega-menu-link" href="assets\about-us\index.html">About Us</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2191' id='mega-menu-item-2191'><a class="mega-menu-link" href="assets\how-it-works\index.html">How It Works</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2195' id='mega-menu-item-2195'><a class="mega-menu-link" href="assets/team/index.html">Team</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1082' id='mega-menu-item-1082'><a class="mega-menu-link" href="contact-us/index.html">Contact Us</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1079' id='mega-menu-item-1079'><a class="mega-menu-link" href="assets/what-we-serve/index.html">What We Serve</a></li></ul>
 </li><li class='mega-cm-menu-head mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-2472 cm-menu-head' id='mega-menu-item-2472'><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Gallery<span class="mega-indicator"></span></a>
 <ul class="mega-sub-menu">
 <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-7515' id='mega-menu-item-7515'><a class="mega-menu-link" href="javascript:void(0)">Home Interior Gallery</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-6574' id='mega-menu-item-6574'><a class="mega-menu-link" href="javascript:void(0)">Videos</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5881' id='mega-menu-item-5881'><a class="mega-menu-link" href="javascript:void(0)">Awards Gallery</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5882' id='mega-menu-item-5882'><a class="mega-menu-link" href="javascript:void(0)">Team’s Gallery</a></li></ul>
@@ -291,7 +341,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="elementor-element elementor-element-8506c71 e-con-full e-flex e-con" data-id="8506c71" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-698e726 cm-bnr-video elementor-widget elementor-widget-video" data-id="698e726" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;play_on_mobile&quot;:&quot;yes&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;}" data-widget_type="video.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.14.0 - 26-06-2023 */
+			<style>
 .elementor-widget-video .elementor-widget-container{overflow:hidden;transform:translateZ(0)}.elementor-widget-video .elementor-wrapper{aspect-ratio:var(--video-aspect-ratio)}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{height:100%;width:100%;display:flex;border:none;background-color:#000}@supports not (aspect-ratio:1/1){.elementor-widget-video .elementor-wrapper{position:relative;overflow:hidden;height:0;padding-bottom:calc(100% / var(--video-aspect-ratio))}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{position:absolute;top:0;right:0;bottom:0;left:0}}.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:50%}.elementor-widget-video .elementor-custom-embed-image-overlay{cursor:pointer;text-align:center}.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i{opacity:1}.elementor-widget-video .elementor-custom-embed-image-overlay img{display:block;width:100%}.elementor-widget-video .e-hosted-video .elementor-video{-o-object-fit:cover;object-fit:cover}.e-con-inner>.elementor-widget-video,.e-con>.elementor-widget-video{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="e-hosted-video elementor-wrapper elementor-open-inline">
 					<video class="elementor-video" src="wp-content/uploads/2023/06/KITCHEN-VIDEO_compressed.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
 				</div>
@@ -300,8 +350,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="elementor-element elementor-element-8e2056c e-con-full cm-ab-post e-flex e-con" data-id="8e2056c" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;position&quot;:&quot;absolute&quot;}">
 				<div class="elementor-element elementor-element-8321f8c cm-head-light animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="8321f8c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_widescreen&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.14.0 - 26-06-2023 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h5 class="elementor-heading-title elementor-size-default">Design <span>Your</span></h5>		</div>
+			<style>
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+<h5 class="elementor-heading-title elementor-size-default">Design <span>Your</span></h5>		</div>
 				</div>
 				<div class="elementor-element elementor-element-636f46d cm-text-clor animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="636f46d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_widescreen&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -452,7 +503,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Home Clues is a leading<br> Home interior<br> design company in Delhi-NCR</h2>		</div>
 				</div>
+				
 				<div class="elementor-element elementor-element-2348ba5 elementor-align-center cm-popup-button cm-btn cm-btn-blc animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="2348ba5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default">
+
+				<!-- <div class="elementor-element elementor-element-2348ba5 elementor-align-center cm-btn cm-btn-blc animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="2348ba5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default"> -->
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-md" href="assets/contact-page.html" data-target="#myModal">
@@ -463,6 +517,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 				</div>
 				</div>
+
+				<div class="container-slider">
+					<img class="img-slider-class" src="assets/slider-image/slider-image-1.png">
+					<img class="img-slider-class" id="my-img-slider" src="assets/slider-image/slider-image-2.png">
+					<input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+				</div>
+
+
 				<div class="elementor-element elementor-element-8ba1cbd elementor-widget elementor-widget-spacer" data-id="8ba1cbd" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
@@ -732,12 +794,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="elementor-element elementor-element-7cafd94  cm-para  animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7cafd94" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 			<style>
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>We have a top-notch team of the <strong>best interior designers in Delhi-NCR </strong><br />who bring brilliant ideas to play with combinations of colors, textures,<br />patterns, and lights.</p>						</div>
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>We make the  <strong>magic happen</strong></p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-4ed6bb0 elementor-align-left cm-btn cm-btn-clr animated-slow elementor-button-info elementor-invisible elementor-widget elementor-widget-button" data-id="4ed6bb0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-4ed6bb0 elementor-align-left animated-slow elementor-button-info elementor-invisible elementor-widget elementor-widget-button" data-id="4ed6bb0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-md" href="javascript:void(0)">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="assets/about-us/index.html">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Explore More</span>
 		</span>
@@ -757,7 +819,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 		<div class="elementor-element elementor-element-77f65de e-flex e-con-boxed e-con" data-id="77f65de" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-9fb9152 e-con-full e-flex e-con" data-id="9fb9152" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div id="home-div" class="elementor-element elementor-element-9fb9152 e-con-full e-flex e-con" data-id="9fb9152" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-20b8078 elementor-widget elementor-widget-spacer" data-id="20b8078" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
@@ -770,7 +832,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			        <div class="eael-infobox">
 	            <div class="infobox-icon elementor-animation-grow">
 
-                            <img decoding="async" src="wp-content/uploads/2023/04/Residential-image-Box.jpg" alt="Residential image Box">
+                       <img decoding="async" src="wp-content/uploads/2023/04/Residential-image-Box.jpg" alt="Residential image Box"> 
             
             
             
@@ -779,12 +841,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <h2 class="title">Home</h2>
                                                                         <p><p>Work Portfolio</p></p>
                                                 <div class="infobox-button">
-            <a class="eael-infobox-button" href="#" data-target="">
-				<!-- <a class="eael-infobox-button" href="#" data-target="#residential"> -->
-
-                                                                                        <img decoding="async" class="eael_infobox_button_icon_left" src="wp-content/uploads/2023/04/Arrow.svg" alt="Arrow" />
-                                                                            <span class="infobox-button-text"></span>
-                            </a>
+          
         </div>
                                     </div>
             </div>
@@ -796,27 +853,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<div class="elementor-element elementor-element-d252e78 e-con-full e-flex e-con" data-id="d252e78" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}" style="margin-top: 50px;">
+<div id="office-div" class="elementor-element elementor-element-d252e78 e-con-full e-flex e-con" data-id="d252e78" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}" style="margin-top: 50px;">
 	<div class="elementor-element elementor-element-8cbf350 eael-infobox-shape-radius cm_res hc_info cm-button eael-infobox-content-align-left eael-infobox-hover-img-shape-radius animated-slow elementor-widget elementor-widget-eael-info-box" data-id="8cbf350" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:700,&quot;_animation_tablet_extra&quot;:&quot;none&quot;}" data-widget_type="eael-info-box.default">
 	<div class="elementor-widget-container">
 		<div class="eael-infobox">
 	<div class="infobox-icon elementor-animation-grow">
 
-				<img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-1.jpg" alt="Mask Group 79">
+		<img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-1.jpg" alt="Mask Group 79">	
 
 
 
 </div>
 <div class="infobox-content">
-				<h2 class="title">Corporate</h2>
+				<h2 class="title">Office</h2>
 															<p>Work Portfolio</p>
 									<div class="infobox-button">
-<!-- <a class="eael-infobox-button" href="#" data-target="#commercial"> -->
-	<a class="eael-infobox-button" href="#" data-target="">
 
-																			<img decoding="async" class="eael_infobox_button_icon_left" src="wp-content/uploads/2023/04/Arrow.svg" alt="Arrow" />
-																<span class="infobox-button-text"></span>
-				</a>
 </div>
 						</div>
 </div>
@@ -840,27 +892,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				</div>
 		<div class="elementor-element elementor-element-8b22bcc e-con-full e-flex e-con" data-id="8b22bcc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-d252e78 e-con-full e-flex e-con" data-id="d252e78" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		
+		
+		
+			<div id="restaurant-div" class="elementor-element elementor-element-d252e78 e-con-full e-flex e-con" data-id="d252e78" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-8cbf350 eael-infobox-shape-radius cm_res hc_info cm-button eael-infobox-content-align-left eael-infobox-hover-img-shape-radius animated-slow elementor-widget elementor-widget-eael-info-box" data-id="8cbf350" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:700,&quot;_animation_tablet_extra&quot;:&quot;none&quot;}" data-widget_type="eael-info-box.default">
 				<div class="elementor-widget-container">
 			        <div class="eael-infobox">
 	            <div class="infobox-icon elementor-animation-grow">
 
-                            <img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-1.jpg" alt="Mask Group 79">
+                    <img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-1.jpg" alt="Mask Group 79">
             
             
             
         </div>
             <div class="infobox-content">
-                            <h2 class="title">Corporate</h2>
-                                                                        <p>Work Portfolio</p>
+                            <h2 class="title">Restaurants</h2>
+                                                                        <p>Food Portfolio</p>
                                                 <div class="infobox-button">
-            <!-- <a class="eael-infobox-button" href="#" data-target="#commercial"> -->
-				<a class="eael-infobox-button" href="#" data-target="">
-
-                                                                                        <img decoding="async" class="eael_infobox_button_icon_left" src="wp-content/uploads/2023/04/Arrow.svg" alt="Arrow" />
-                                                                            <span class="infobox-button-text"></span>
-                            </a>
+          
         </div>
                                     </div>
             </div>
@@ -875,13 +925,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-39a2dec e-con-full e-flex e-con" data-id="39a2dec" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+			
+				
+
+				
+		<div id="video-div" class="elementor-element elementor-element-39a2dec e-con-full e-flex e-con" data-id="39a2dec" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-672a736 eael-infobox-shape-radius cm_res hc_info cm-button eael-infobox-content-align-left eael-infobox-hover-img-shape-radius animated-slow elementor-widget elementor-widget-eael-info-box" data-id="672a736" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:900,&quot;_animation_tablet_extra&quot;:&quot;none&quot;}" data-widget_type="eael-info-box.default">
 				<div class="elementor-widget-container">
 			        <div class="eael-infobox">
 	            <div class="infobox-icon elementor-animation-grow">
 
-                            <img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-2.jpg" alt="Mask Group 79">
+                        <a href="assets/videos/index.html"><img decoding="async" src="wp-content/uploads/2023/04/Mask-Group-79-2.jpg" alt="Mask Group 79"></a> 
             
             
             
@@ -893,7 +947,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <!-- <a class="eael-infobox-button" href="#" data-target="#video"> -->
 				<a class="eael-infobox-button" href="#" data-target="">
 
-                                                                                        <img decoding="async" class="eael_infobox_button_icon_left" src="wp-content/uploads/2023/04/Arrow.svg" alt="Arrow" />
+                                                                                        <!-- <img decoding="async" class="eael_infobox_button_icon_left" src="wp-content/uploads/2023/04/Arrow.svg" alt="Arrow" /> -->
                                                                             <span class="infobox-button-text"></span>
                             </a>
         </div>
@@ -1071,18 +1125,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-f2baad3 cm-hover-arrow e-flex e-con-boxed e-con" data-id="f2baad3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+		<!-- <div class="elementor-element elementor-element-f2baad3 cm-hover-arrow e-flex e-con-boxed e-con" data-id="f2baad3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}"> -->
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-ef76ba0 e-con-full e-flex e-con" data-id="ef76ba0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<!-- <div class="elementor-element elementor-element-ef76ba0 e-con-full e-flex e-con" data-id="ef76ba0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-6d93ee7 cm-head-clr animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="6d93ee7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Modern <br><span>Interior Design</span></h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a8063fe  cm-para  animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="a8063fe" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
+				</div> -->
+				<!-- <div class="elementor-element elementor-element-a8063fe  cm-para  animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="a8063fe" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p>If you are looking out for a beautiful home that fits in your <br />budget, Yes! You are at the right place, we will make your dream <br />home come true!!</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-1d16fc8 elementor-align-left cm-btn cm-btn-clr cm-popup-button animated-slow elementor-button-info elementor-invisible elementor-widget elementor-widget-button" data-id="1d16fc8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default">
+				</div> -->
+				<!-- <div class="elementor-element elementor-element-1d16fc8 elementor-align-left cm-btn cm-btn-clr cm-popup-button animated-slow elementor-button-info elementor-invisible elementor-widget elementor-widget-button" data-id="1d16fc8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-md" href="#" data-target="#myModal">
@@ -1092,18 +1146,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</a>
 		</div>
 				</div>
+				</div> -->
 				</div>
-				</div>
-				<div class="elementor-element elementor-element-780f1f6 cm-hover animated-slow elementor-view-default elementor-widget elementor-widget-icon" data-id="780f1f6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="icon.default">
+				<!-- <div class="elementor-element elementor-element-780f1f6 cm-hover animated-slow elementor-view-default elementor-widget elementor-widget-icon" data-id="780f1f6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg xmlns="http://www.w3.org/2000/svg" width="22.802" height="189.08" viewBox="0 0 22.802 189.08"><path id="Path_119" data-name="Path 119" d="M322.774,209.69l.985.985,11.4-11.4-11.4-11.4-.985.985,9.712,9.711-186.405,1.408v1.408l186.405-1.408Z" transform="translate(210.675 -146.081) rotate(90)" fill="#f5f5f7"></path></svg>			</div>
 		</div>
 				</div>
-				</div>
-					</div>
-				</div>
+				</div> -->
+					<!-- </div> -->
+				<!-- </div> -->
 		<div class="elementor-element elementor-element-af3a4d8 e-flex e-con-boxed e-con" data-id="af3a4d8" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-b90a106 elementor-widget elementor-widget-spacer" data-id="b90a106" data-element_type="widget" data-widget_type="spacer.default">
@@ -1113,7 +1167,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-fe00ae3 cm-slide-img elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="fe00ae3" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+
+
+
+									<!-- Slideing sofa's Code-->
+
+
+
+				<!-- <div class="elementor-element elementor-element-fe00ae3 cm-slide-img elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="fe00ae3" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.14.0 - 26-06-2023 */
 .elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
@@ -1128,7 +1189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 				</div>
 					</div>
-				</div>
+				</div> -->
 		<div class="elementor-element elementor-element-c8ba062 e-flex e-con-boxed e-con" data-id="c8ba062" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-2c31c19 elementor-widget elementor-widget-spacer" data-id="2c31c19" data-element_type="widget" data-widget_type="spacer.default">
@@ -1138,13 +1199,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-6ee7f3d elementor-widget elementor-widget-heading" data-id="6ee7f3d" data-element_type="widget" data-widget_type="heading.default">
+				<!-- <div class="elementor-element elementor-element-6ee7f3d elementor-widget elementor-widget-heading" data-id="6ee7f3d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h3 class="elementor-heading-title elementor-size-default">Our Happy Clients</h3>		</div>
-				</div>
+				</div> -->
 				<div class="elementor-element elementor-element-63f9ffa cm-head cm-head-clr elementor-widget elementor-widget-heading" data-id="63f9ffa" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Here's what our <span>satisfied<br>  clients</span> are saying</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">We Make<span> The<br>Magic</span> Happen</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-eb81c04 elementor-widget elementor-widget-spacer" data-id="eb81c04" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
@@ -1156,9 +1217,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 				</div>
 		<div class="elementor-element elementor-element-1693de9 e-con-full cm-width-pad cm-padding-right e-flex e-con" data-id="1693de9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-ef0eca5 e-con-full animated-slow e-flex elementor-invisible e-con" data-id="ef0eca5" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_delay&quot;:600}" data-e-bg-lazyload="">
-				</div>
-		<div class="elementor-element elementor-element-7c9f6f0 e-con-full cm-slider-acc animated-slow e-flex elementor-invisible e-con" data-id="7c9f6f0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:600}">
+		<!-- <div class="elementor-element elementor-element-ef0eca5 e-con-full animated-slow e-flex elementor-invisible e-con" data-id="ef0eca5" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_delay&quot;:600}" data-e-bg-lazyload="">
+				</div> -->
+		<!-- <div class="elementor-element elementor-element-7c9f6f0 e-con-full cm-slider-acc animated-slow e-flex elementor-invisible e-con" data-id="7c9f6f0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:600}">
 				<div class="elementor-element elementor-element-d73306b elementor-widget__width-initial elementor-widget elementor-widget-eael-testimonial" data-id="d73306b" data-element_type="widget" data-widget_type="eael-testimonial.default">
 				<div class="elementor-widget-container">
 			
@@ -1289,7 +1350,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			</div>
 				</div>
-				</div>
+				</div> -->
 				</div>
 		<div class="elementor-element elementor-element-3ce8d16 e-flex e-con-boxed e-con" data-id="3ce8d16" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
@@ -1300,24 +1361,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-63bfa92 elementor-widget elementor-widget-heading" data-id="63bfa92" data-element_type="widget" data-widget_type="heading.default">
+				<!-- <div class="elementor-element elementor-element-63bfa92 elementor-widget elementor-widget-heading" data-id="63bfa92" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h3 class="elementor-heading-title elementor-size-default">Latest News & Updates</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-1d69c6a cm-head cm-head-clr elementor-widget elementor-widget-heading" data-id="1d69c6a" data-element_type="widget" data-widget_type="heading.default">
+				</div> -->
+				<!-- <div class="elementor-element elementor-element-1d69c6a cm-head cm-head-clr elementor-widget elementor-widget-heading" data-id="1d69c6a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Follow the latest news</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-b9cf86d elementor-widget elementor-widget-spacer" data-id="b9cf86d" data-element_type="widget" data-widget_type="spacer.default">
+				</div> -->
+				<!-- <div class="elementor-element elementor-element-b9cf86d elementor-widget elementor-widget-spacer" data-id="b9cf86d" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
 		</div>
 				</div>
-				</div>
+				</div> -->
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-891d1eb e-flex e-con-boxed e-con" data-id="891d1eb" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+
+
+
+									<!-- LATEST NEW CODE -->
+
+
+
+
+		<!-- <div class="elementor-element elementor-element-891d1eb e-flex e-con-boxed e-con" data-id="891d1eb" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-f632c74 cm-blod-sec cm-slider-mobile-one animated-slow grid-hover-overlay-type-zoomout-on-hover meta-visibility-show title_position_default title_hover_border_default title-default img_hover_animation_default meta_position_default tpg-category-position-default tpg-el-box-border-enable tpg-border-bottom-disable elementor-invisible elementor-widget elementor-widget-tpg-grid-layout" data-id="f632c74" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="tpg-grid-layout.default">
 				<div class="elementor-widget-container">
@@ -1329,8 +1398,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              data-el-settings=''
              data-el-query=''
              data-el-path=''
-        >
-
+        > -->
+<!-- 
 			<div class='tpg-header-wrapper '></div>
             <div data-title="Loading ..." class="rt-row rt-content-loader grid-layout1 grid-behaviour tpg-full-height grid_layout_wrapper">
 				<div class="rt-col-md-4 rt-col-sm-6 rt-col-xs-12 default rt-grid-item post-141 post type-post status-publish format-standard has-post-thumbnail hentry category-interior"		data-id="141">
@@ -1359,8 +1428,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 					</div>
 	</div>
-</div>
-<div class="rt-col-md-4 rt-col-sm-6 rt-col-xs-12 default rt-grid-item post-3560 post type-post status-publish format-standard has-post-thumbnail hentry category-interior"		data-id="3560">
+</div> -->
+<!-- <div class="rt-col-md-4 rt-col-sm-6 rt-col-xs-12 default rt-grid-item post-3560 post type-post status-publish format-standard has-post-thumbnail hentry category-interior"		data-id="3560">
 	<div class="rt-holder tpg-post-holder">
 		<div class="rt-detail rt-el-content-wrapper">
 							<div class="rt-img-holder tpg-el-image-wrap has-thumbnail">
@@ -1428,8 +1497,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 				</div>
 					</div>
-				</div>
-		<div class="elementor-element elementor-element-2bffa68 e-con-full cm-fixed e-flex e-con" data-id="2bffa68" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				</div> -->
+
+
+<!-- SIDEBAR SLIEDR CODE -->
+
+
+
+
+		<!-- <div class="elementor-element elementor-element-2bffa68 e-con-full cm-fixed e-flex e-con" data-id="2bffa68" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-d9b2334 cm-slider e-flex e-con-boxed e-con" data-id="d9b2334" data-element_type="container" id="video" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-f30aac1 cm-span-clr-text content-align-cta-default elementor-widget elementor-widget-eael-cta-box" data-id="f30aac1" data-element_type="widget" data-widget_type="eael-cta-box.default">
@@ -1630,11 +1706,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 					</div>
 				</div>
-				</div>
-							</div>
+				</div> -->
+
+
+
+				<!-- SIDEBAR SLIEDR CODE -->
+
+
+
+							<!-- </div>
 			</div>
 
-	</article>
+	</article> -->
 <div class="navigation"></div>
 		</main>
 	</div>
@@ -1659,7 +1742,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 class="wp-block-heading has-text-align-center">Design Your Dream House<br> with the Experts of <br>HOMECLUES</h2>
 </section><section id="block-33" class="widget col-sm-2 widget_block">
 <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-2">
-<div class="wp-block-button cm-popup-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="contact-us/index.html" data-target="#myModal">Let's Connect</a></div>
+<div class="wp-block-button "><a class="wp-block-button__link has-text-align-center wp-element-button" href="contact-us/index.html" data-target="#myModal">Let's Connect</a></div>
 </div>
 </section>		</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -1673,7 +1756,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
 <ul class="cm-cont">
 <li><span>EMAIL US</span>
-<p>Info@hcinterior.in</p></li>
+<p>Info@homeclues.in</p></li>
 <li><span>FOR QUERY</span>
 <p>+91 98105 06301</p></li>
 
@@ -1681,11 +1764,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div></div>
 </section>						</div>
 						<div class="section-2">
-						<section id="nav_menu-2" class="widget  widget_nav_menu"><h2 class="widgettitle">High Creation</h2><div class="javascript:void(0)"><ul id="menu-high-creation" class="menu"><li id="menu-item-518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-518"><a href="javascript:void(0)">About Us</a></li>
-<li id="menu-item-4726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4726"><a href="javascript:void(0)">How It Works</a></li>
-<li id="menu-item-3026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3026"><a href="javascript:void(0)">Team</a></li>
+						<section id="nav_menu-2" class="widget  widget_nav_menu"><h2 class="widgettitle">High Creation</h2><div class="javascript:void(0)"><ul id="menu-high-creation" class="menu"><li id="menu-item-518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-518"><a href="assets\about-us\index.html">About Us</a></li>
+<li id="menu-item-4726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4726"><a href="assets\how-it-works\index.html">How It Works</a></li>
+<li id="menu-item-3026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3026"><a href="assets/team/index.html">Team</a></li>
 <li id="menu-item-516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-516"><a href="javascript:void(0)">Career</a></li>
-<li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="javascript:void(0)">Contact Us</a></li>
+<li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="assets/contact-page.html">Contact Us</a></li>
 <li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514"><a href="javascript:void(0)">Refer &#038; Earn</a></li>
 <li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="javascript:void(0)">FAQ</a></li>
 <li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="javascript:void(0)">Blog</a></li>
@@ -1705,11 +1788,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="javascript:void(0)">Modular Wardrobe Interior Designer</a></li>
 <li id="menu-item-7500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7500"><a href="javascript:void(0)">Home Interior  Gallery</a></li>
 </ul></div></section><section id="block-44" class="widget  widget_block"><h2 class="widgettitle">Branch Office</h2>
-<p>H101, LGF, Sector-63, Noida,<br> Uttar Pradesh- 201301</p><br>
-<p>618P, LGF, Sector-39, Gurugram,<br> Haryana- 122002</p><br>
-<p>17, Vikas Vihar, Mohanpuri, Meerut,<br> Uttar Pradesh- 250001</p><br>
-<h2 class="widgettitle">Workshop</h2>
-<p>Plot No-3, Sorkha Village , Sector-115, Noida, Uttar Pradesh- 201301</p></section>						</div>
+	<p>Plot No 662, Shakti Khand III, Indirapuram, Ghaziabad<br> Uttar Pradesh- 201014</p><br></section></section>						</div>
 						<div class="section-3">
 						<section id="block-36" class="widget col-sm-2 widget_block">
 <ul>
@@ -1766,6 +1845,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		  
 		  'send_to': 'AW-694515941/8VXSCKWHx64YEOXxlcsC'});
 </script>
+<script>
+					document.getElementById("restaurant-div").addEventListener("click", function() {
+						window.location.href = "assets/restaurants-gallery/index.html";
+					});
+
+					document.getElementById("office-div").addEventListener("click", function() {
+						window.location.href = "assets/office-gallery/index.html";
+					});
+
+					document.getElementById("home-div").addEventListener("click", function() {
+						window.location.href = "assets/home-gallery/index.html";
+					});
+
+					document.getElementById("video-div").addEventListener("click", function() {
+						window.location.href = "assets/videos/index.html";
+					});
+</script>
+
 
 
 <div class='eael-ext-scroll-to-top-wrap scroll-to-top-hide'><span class='eael-ext-scroll-to-top-button'><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span></div>
@@ -1983,5 +2080,12 @@ form.append('<input type="hidden" name="vx_url" value="'+window.location.href+'"
 
 });
 </script> 
+<script>
+	function slide(){
+    let slideValue = document.getElementById("slider").value;
+    document.getElementById("my-img-slider").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+}
+</script>
 
 </body>

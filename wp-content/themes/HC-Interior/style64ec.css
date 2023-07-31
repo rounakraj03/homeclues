@@ -959,49 +959,15 @@ body,
     color: var(--bg-primary);
 }
 
-/* fixed hedaer css end
+/* fixed hedaer css end */
 .site-branding a, .site-branding a img {
 	height: 70px;
-    width: 200px;
 	object-fit: contain;
-	/* width: max-content; 
+	width: max-content;
 	display: inline-block;
     margin: -5px 0px 0px -30px;
-} */
-
-/* Base styles */
-.site-branding a,
-.site-branding a img {
-  height: 70px;
-  width: 200px;
-  object-fit: contain;
-  /* width: max-content; */
-  display: inline-block;
-  margin: -5px 0px 0px -30px;
 }
 
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  /* Adjust the logo size for smaller screens */
-  .site-branding a,
-  .site-branding a img {
-    height: 50px;
-    width: 150px;
-    margin: 0; /* Remove negative margin to center the logo */
-  }
-
-  @media screen and (max-width: 605px) {
-    /* Adjust the logo size for smaller screens */
-    .site-branding a,
-    .site-branding a img {
-      height: 40px;
-      width: 120px;
-      margin: 0; /* Remove negative margin to center the logo */
-    }
-}
-
-}
 .logo-site {
     padding: 0;
 }
