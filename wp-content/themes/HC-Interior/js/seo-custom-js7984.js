@@ -50,8 +50,8 @@ jQuery(document).ready(function(){
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
-		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 	});
 	
 	jQuery('#primary .cm-video-slider').slick({
@@ -62,8 +62,8 @@ jQuery(document).ready(function(){
 		slidesToScroll: 1,
 		speed: 1500,
 		dots: false,
-		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 	})
 	jQuery('#primary .cm-slider-three').slick({
 		infinite: true,
@@ -72,8 +72,8 @@ jQuery(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: false,
-		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 		responsive: [
 			{
 			  breakpoint: 880,
@@ -98,8 +98,8 @@ jQuery(document).ready(function(){
 		dots: true,
 		centerMode: true,
   		centerPadding: '60px',
-		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 	})
 	jQuery('#primary .cm-slider-two').slick({
 		infinite: true,
@@ -110,8 +110,8 @@ jQuery(document).ready(function(){
 		dots: true,
 		centerMode: true,
   		centerPadding: '60px',
-		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 		responsive: [
 			{
 			  breakpoint: 600,
@@ -128,8 +128,8 @@ jQuery(document).ready(function(){
 			autoplaySpeed: 2000,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.png" alt="left Arrow"></button>',
-			nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-arrow.png" alt="right arrow"></button>',
+			prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/uploads/2023/04/left-Arrow.svg" alt="left Arrow"></button>',
+			nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/uploads/2023/04/right-Arrow.svg" alt="right arrow"></button>',
 		})
 
 		jQuery('header #block-35').remove();

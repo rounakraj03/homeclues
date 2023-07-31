@@ -59,17 +59,17 @@ img.emoji {
 }
 
 .center {
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   background-color: #29292A;
   /* background-color: rgb(243, 182, 69); */
   transition: width 3s, height 4s;
-
   display: flex;
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  margin-left: 150px;
 }
 
 .center:hover {
@@ -96,10 +96,28 @@ img.emoji {
 .col-md-4{
 	/* border: 1px solid red; */
 	margin-left: 0px;
-	padding: 0px 0px 0px 20px;
-	box-sizing: border-box;
-
+	/* margin-left: 0px; */
+	/* padding: 0px 0px 0px 50px; */
+	/* box-sizing: border-box; */
 }
+
+@media (max-width: 767px) {
+        .center4 {
+            margin:0px 0px 0px -30px; /* Adjust the margins as needed */
+        }
+
+		.center {
+            padding: 10px;
+			/* margin:0px 0px 0px -30px; Adjust the margins as needed */
+        }
+
+        .container.process2 .center p {
+            margin-left: 0;
+            text-align: center; /* Optionally center the text */
+        }
+    }
+
+
 </style>
 	<style type="text/css">
 .archive #nav-above,
@@ -670,7 +688,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- <div class="container-fluid"> -->
 	<!-- <div class="container"> -->
+	</div>
 
+	<div class="container-fluid">
 				<div class="container" style="margin-left: 50px;">
 					<div class="row">
 						<div class="col-md-4 col-sm-4 col-lg-4">
@@ -696,18 +716,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="container process2" style="margin:100px 0px 0px 250px;	">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-lg-4">
-								<div class="center">
-									<p>Estimation</p>
+								<div class="center center4">
+									<p style="margin-left: 25px;">Estimation</p>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 col-lg-4">
-								<div class="center">
-									<p>Execution</p>
+								<div class="center center5">
+									<p style="margin-left: 30px;">Execution</p>
 								</div>
 							</div>
 						</div>
 				    </div>
-			
+	<!-- </div> -->
 <!-- </div>		 -->
 				<br><br><br><br><br>
 
@@ -1025,11 +1045,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="javascript:void(0)">Modular Wardrobe Interior Designer</a></li>
 <li id="menu-item-7500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7500"><a href="javascript:void(0)">Home Interior  Gallery</a></li>
 </ul></div></section><section id="block-44" class="widget  widget_block"><h2 class="widgettitle">Branch Office</h2>
-<p>H101, LGF, Sector-63, Noida,<br> Uttar Pradesh- 201301</p><br>
-<p>618P, LGF, Sector-39, Gurugram,<br> Haryana- 122002</p><br>
-<p>17, Vikas Vihar, Mohanpuri, Meerut,<br> Uttar Pradesh- 250001</p><br>
-<h2 class="widgettitle">Workshop</h2>
-<p>Plot No-3, Sorkha Village , Sector-115, Noida, Uttar Pradesh- 201301</p></section>						</div>
+	<p>Plot No 662, Shakti Khand III, Indirapuram, Ghaziabad<br> Uttar Pradesh- 201014</p><br></section>					</div>
 						<div class="section-3">
 						<section id="block-36" class="widget col-sm-2 widget_block">
 <ul>
