@@ -962,11 +962,41 @@ body,
 /* fixed hedaer css end */
 .site-branding a, .site-branding a img {
 	height: 70px;
+    width: 200px;
 	object-fit: contain;
 	width: max-content;
 	display: inline-block;
     margin: -5px 0px 0px -30px;
 }
+@media screen and (max-width: 2500px) {
+    /* Adjust the logo size for smaller screens */
+    .site-branding a,
+    .site-branding a img {
+      height: 50px;
+      width: 150px;
+      margin: 0; /* Remove negative margin to center the logo */
+    }
+}
+@media screen and (max-width: 660px) {
+    /* Adjust the logo size for smaller screens */
+    .site-branding a,
+    .site-branding a img {
+      height: 30px;
+      width: 110px;
+      margin: 0; /* Remove negative margin to center the logo */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* Adjust the logo size for smaller screens */
+    .site-branding a,
+    .site-branding a img {
+      height: 20px;
+      width: 70px;
+      margin: 0; /* Remove negative margin to center the logo */
+    }
+}
+
 
 .logo-site {
     padding: 0;
@@ -1697,7 +1727,7 @@ section#block-36 {
     color: #F56900;
 }
 #primary .cm-text-clor .elementor-heading-title {
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #E3E6E9 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg,#f8850a 0%,#f80a0a 100%) 0% 0% no-repeat padding-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2306,7 +2336,7 @@ section#block-36 {
     display: inline-block;
     width: 220px;
     height: 100px;
-    background: url(../../uploads/2023/04/text-line.png) no-repeat center;
+    /* background: url(../../uploads/2023/04/text-line.png) no-repeat center; */
     background-size: contain;
     transform: translate(-70px, 60px);
 }
@@ -5284,7 +5314,7 @@ body .eael-ext-scroll-to-top-wrap .eael-ext-scroll-to-top-button svg{
         width: 100px;
         height: 100px;
         display: inline-block !important;
-        background: url(/wp-content/uploads/2023/06/HC-logo-3-cropped.png) no-repeat center;
+        background: url(../../../Images/) no-repeat center;
         background-size: contain;
     }
     
